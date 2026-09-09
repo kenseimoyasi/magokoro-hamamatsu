@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>こども食堂MAGOKORO について</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=BIZ+UDPGothic:wght@400;700&display=swap">
+<style>
+  :root{
+    --bg:#FFF9F0;--surface:#FFFFFF;--ink:#48372A;--ink-soft:#8A7969;--line:#EEE1D0;
+    --accent:#D9761F;--accent-ink:#B25E12;--accent-soft:#FBE8D5;--leaf:#6E9A55;--heart:#DA6161;
+    --shadow:0 1px 2px rgba(72,55,42,.06),0 8px 24px rgba(72,55,42,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#241B14;--surface:#2F261E;--ink:#F2E7D7;--ink-soft:#B6A692;--line:#3E3329;
+      --accent:#EF9E56;--accent-ink:#F0A863;--accent-soft:#3A2B1F;--leaf:#A7C98D;--heart:#E88C8C;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.28);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#241B14;--surface:#2F261E;--ink:#F2E7D7;--ink-soft:#B6A692;--line:#3E3329;
+    --accent:#EF9E56;--accent-ink:#F0A863;--accent-soft:#3A2B1F;--leaf:#A7C98D;--heart:#E88C8C;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.28);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"BIZ UDPGothic","Hiragino Sans","Yu Gothic UI",system-ui,sans-serif;
+    font-size:17.5px;line-height:1.9;letter-spacing:.01em;
+  }
+  .wrap{max-width:39rem;margin:0 auto;padding:0 20px 64px}
+  header{padding:34px 0 10px;text-align:center}
+  .mark{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:"Zen Maru Gothic",sans-serif;font-weight:700;
+    font-size:1.05rem;color:var(--ink-soft);letter-spacing:.03em;
+  }
+  .mark .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);flex:none}
+  .badge{display:flex;align-items:center;gap:13px;margin:18px 0 6px}
+  .badge .ic{
+    width:52px;height:52px;border-radius:50%;flex:none;background:var(--accent-soft);
+    display:flex;align-items:center;justify-content:center;font-size:1.5rem;
+  }
+  .badge h1{
+    font-family:"Zen Maru Gothic",sans-serif;font-weight:700;
+    font-size:1.5rem;margin:0;color:var(--ink);text-wrap:balance;
+  }
+  .lead{color:var(--ink-soft);margin:2px 0 20px}
+  p{margin:0 0 14px}
+  a{color:var(--accent-ink);text-underline-offset:3px}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+  h2.sec{font-family:"Zen Maru Gothic",sans-serif;font-size:1.1rem;margin:22px 0 8px;color:var(--ink)}
+  ul.plain{margin:4px 0 16px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+  ul.plain li{position:relative;padding-left:18px}
+  ul.plain li::before{content:"";position:absolute;left:3px;top:.66em;width:6px;height:6px;border-radius:50%;background:var(--leaf)}
+  .linkrow{display:flex;flex-direction:column;gap:8px;margin:4px 0 18px}
+  .linkrow a{
+    display:flex;align-items:center;gap:10px;background:var(--surface);
+    border:1px solid var(--line);border-radius:12px;padding:13px 15px;
+    text-decoration:none;color:var(--ink);box-shadow:var(--shadow);font-weight:700;
+  }
+  .linkrow a .t{color:var(--ink-soft);font-size:.82rem;margin-left:auto;letter-spacing:.03em;font-weight:400}
+  .callout{
+    background:var(--surface);border:1px solid var(--line);border-radius:14px;
+    padding:16px 18px;margin:4px 0 16px;box-shadow:var(--shadow);
+  }
+  .callout h2{margin:0 0 6px;font-family:"Zen Maru Gothic",sans-serif;font-size:1.05rem;color:var(--ink)}
+  .callout p:last-child{margin-bottom:0}
+  footer{
+    margin-top:36px;padding-top:20px;border-top:1px solid var(--line);
+    text-align:center;color:var(--ink-soft);font-size:.85rem;line-height:1.8;
+  }
+  footer .fh{color:var(--heart)}
+  .nav{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 0;padding-top:20px;border-top:1px solid var(--line)}
+  .nav a{
+    flex:1;min-width:9rem;text-align:center;background:var(--surface);
+    border:1px solid var(--line);border-radius:12px;padding:12px 10px;
+    text-decoration:none;color:var(--ink);box-shadow:var(--shadow);font-weight:700;font-size:.95rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="mark"><span class="dot"></span>こども食堂MAGOKORO</span>
+  </header>
+
+  <div class="badge"><span class="ic">💌</span><h1>MAGOKOROについて</h1></div>
+  <p class="lead">浜松市で活動している、こども食堂です。</p>
+  <p>地域の子どもたちとご家庭に、あたたかいごはんを届けたいという思いで、毎月開催しています。</p>
+
+  <h2 class="sec">ふだんの活動</h2>
+  <ul class="plain">
+    <li>毎月のこども食堂（第3土曜日ごろ）</li>
+    <li>フードパントリー（食料のおすそわけ）</li>
+    <li>ひとり親家庭・生活にお困りのご家庭を対象としたこども食堂</li>
+    <li>学習支援</li>
+    <li>畑を借りての野菜づくり。収穫の時期には、親子で収穫体験を行っています。</li>
+  </ul>
+
+  <h2 class="sec">見る・読む</h2>
+  <div class="linkrow">
+    <a href="https://www.instagram.com/magokorohamamatu/">📷 Instagram <span class="t">活動の様子</span></a>
+    <a href="https://note.com/magokoro_suzuki">📝 note <span class="t">読みもの</span></a>
+  </div>
+
+  <div class="callout">
+    <h2>支援情報の登録</h2>
+    <p>フードパントリーや、お困りのご家庭向けのご案内を受け取りたい方は、公式LINEのメニュー「支援情報登録」からご登録いただけます。登録は任意です。</p>
+  </div>
+
+  <div class="callout">
+    <h2>活動を支えてくださる方へ</h2>
+    <p>ご寄付・食材のご提供・ボランティアなど、活動を支えてくださる方も歓迎しています。この公式LINEのトークから、お気軽にお声かけください。</p>
+  </div>
+
+  <nav class="nav">
+    <a href="../goriyou/">ご利用案内</a>
+    <a href="../moushikomi/">お申し込み方法</a>
+  </nav>
+
+  <footer>
+    こども食堂MAGOKORO　<span class="fh">&#9825;</span>　浜松市<br>
+    お問い合わせは公式LINEのトークへ
+  </footer>
+</div>
+</body>
+</html>

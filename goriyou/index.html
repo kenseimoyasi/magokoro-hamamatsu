@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>こども食堂MAGOKORO ご利用案内</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=BIZ+UDPGothic:wght@400;700&display=swap">
+<style>
+  :root{
+    --bg:#FFF9F0;--surface:#FFFFFF;--ink:#48372A;--ink-soft:#8A7969;--line:#EEE1D0;
+    --accent:#D9761F;--accent-ink:#B25E12;--accent-soft:#FBE8D5;--leaf:#6E9A55;--heart:#DA6161;
+    --shadow:0 1px 2px rgba(72,55,42,.06),0 8px 24px rgba(72,55,42,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#241B14;--surface:#2F261E;--ink:#F2E7D7;--ink-soft:#B6A692;--line:#3E3329;
+      --accent:#EF9E56;--accent-ink:#F0A863;--accent-soft:#3A2B1F;--leaf:#A7C98D;--heart:#E88C8C;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.28);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#241B14;--surface:#2F261E;--ink:#F2E7D7;--ink-soft:#B6A692;--line:#3E3329;
+    --accent:#EF9E56;--accent-ink:#F0A863;--accent-soft:#3A2B1F;--leaf:#A7C98D;--heart:#E88C8C;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.28);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"BIZ UDPGothic","Hiragino Sans","Yu Gothic UI",system-ui,sans-serif;
+    font-size:17.5px;line-height:1.9;letter-spacing:.01em;
+  }
+  .wrap{max-width:39rem;margin:0 auto;padding:0 20px 64px}
+  header{padding:34px 0 10px;text-align:center}
+  .mark{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:"Zen Maru Gothic",sans-serif;font-weight:700;
+    font-size:1.05rem;color:var(--ink-soft);letter-spacing:.03em;
+  }
+  .mark .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);flex:none}
+  .badge{display:flex;align-items:center;gap:13px;margin:18px 0 6px}
+  .badge .ic{
+    width:52px;height:52px;border-radius:50%;flex:none;background:var(--accent-soft);
+    display:flex;align-items:center;justify-content:center;font-size:1.5rem;
+  }
+  .badge h1{
+    font-family:"Zen Maru Gothic",sans-serif;font-weight:700;
+    font-size:1.5rem;margin:0;color:var(--ink);text-wrap:balance;
+  }
+  .lead{color:var(--ink-soft);margin:2px 0 20px}
+  p{margin:0 0 14px}
+  a{color:var(--accent-ink);text-underline-offset:3px}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+  .keys{background:var(--accent-soft);border-radius:18px;padding:20px 22px;margin:6px 0 26px}
+  .keys h2{
+    font-family:"Zen Maru Gothic",sans-serif;font-weight:700;
+    margin:0 0 10px;font-size:1rem;color:var(--accent-ink);letter-spacing:.03em;
+  }
+  .keys ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+  .keys li{position:relative;padding-left:20px;line-height:1.7}
+  .keys li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+  .topic{border-top:1px solid var(--line);padding:20px 0 4px}
+  .topic h2{
+    font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:1.1rem;
+    margin:0 0 8px;color:var(--ink);display:flex;gap:10px;align-items:baseline;
+  }
+  .topic h2 .n{
+    color:var(--ink-soft);font-variant-numeric:tabular-nums;
+    font-size:.95rem;font-weight:700;flex:none;min-width:1.4em;
+  }
+  .creed{text-align:center;margin:8px 0 4px;font-family:"Zen Maru Gothic",sans-serif}
+  .creed b{display:block;font-size:1.14rem;color:var(--accent-ink);font-weight:700;line-height:1.7}
+  .creed .hh{color:var(--heart);font-size:1rem}
+  footer{
+    margin-top:36px;padding-top:20px;border-top:1px solid var(--line);
+    text-align:center;color:var(--ink-soft);font-size:.85rem;line-height:1.8;
+  }
+  footer .fh{color:var(--heart)}
+  .nav{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 0;padding-top:20px;border-top:1px solid var(--line)}
+  .nav a{
+    flex:1;min-width:9rem;text-align:center;background:var(--surface);
+    border:1px solid var(--line);border-radius:12px;padding:12px 10px;
+    text-decoration:none;color:var(--ink);box-shadow:var(--shadow);font-weight:700;font-size:.95rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="mark"><span class="dot"></span>こども食堂MAGOKORO</span>
+  </header>
+
+  <div class="badge"><span class="ic">🍱</span><h1>ご利用案内</h1></div>
+  <p class="lead">お申し込みの前に、一度ご確認ください。</p>
+  <p>こども食堂MAGOKOROは、地域の子どもたちとご家庭に、あたたかいごはんを届けたいという思いで活動しています。以下は、限られた食数を、できるだけ公平に、必要としているご家庭へお届けするためのお願いです。</p>
+
+  <div class="keys">
+    <h2>まずは、ここだけ</h2>
+    <ul>
+      <li>食数は毎回変わります（150食ほどご用意できる回もあります）</li>
+      <li>お申し込みが多いときは、全員をお受けできないことがあります（先着順ではありません）</li>
+      <li>大人は2食まで／子どもは実際に必要な数で</li>
+      <li>来られなくなったときは、早めにひとことご連絡ください</li>
+    </ul>
+  </div>
+
+  <div class="topic">
+    <h2><span class="n">1</span>食数について</h2>
+    <p>ご用意できる食数は、食材の寄付や助成金などの状況によって、開催日ごとに変わります。150食ほどご用意できることもありますが、毎回同じではありません。</p>
+    <p>お申し込みが多いときは、すべての方をお受けできないことがあります。受付は、その回の食数や全体の状況、はじめての方への配慮などを見ながら決めており、単純な早い者順ではありません。お受けできない場合も、限られた食数を公平にお届けするための調整だとご理解いただけたらと思います。</p>
+  </div>
+
+  <div class="topic">
+    <h2><span class="n">2</span>大人の食事について</h2>
+    <p>大人の食事は、お一人につき2食までとさせていただいています。多くのご家庭に届けるためのお願いです。ご協力をお願いいたします。</p>
+  </div>
+
+  <div class="topic">
+    <h2><span class="n">3</span>子どもの食事について</h2>
+    <p>お子さんの人数に制限は設けていません。ただし食数には限りがあるため、実際に必要な数でお申し込みください。</p>
+    <p>特にテイクアウトは、多めにお申し込みいただくと、ほかのご家庭のぶんが減ってしまいます。「少し多めに」ではなく、実際に食べる数でお願いします。事情があっていつもより多く必要なときは、お申し込みのときにご相談ください。</p>
+  </div>
+
+  <div class="topic">
+    <h2><span class="n">4</span>中学生以上について</h2>
+    <p>中学生以上は、原則として大人として数えます。ただし年齢だけで一律に判断せず、ご家庭の状況に応じて対応します。ご相談は、お申し込みのときにお伝えください。</p>
+  </div>
+
+  <div class="topic">
+    <h2><span class="n">5</span>お誕生日のお祝いについて</h2>
+    <p>お誕生日月のお子さんには、いただいた食品などで、ささやかなプレゼントをご用意することがあります。</p>
+    <p>ただし、「お誕生日だから必ず受付できる」「お誕生日だから必ずプレゼントをお渡しできる」というものではありません。食数もプレゼントも、寄付や支援でまかなっているため数に限りがあります。できるだけ多くの子どもたちをお祝いしたい気持ちはありますが、状況によってはご用意できないこともあります。</p>
+    <p>該当する場合は、お申し込みのときにお知らせください。できる範囲で、心を込めてお祝いします。</p>
+  </div>
+
+  <div class="topic">
+    <h2><span class="n">6</span>当日のキャンセル・欠席について</h2>
+    <p>急な事情は誰にでもあります。キャンセルを責めることはありません。</p>
+    <p>ただ、ご連絡のないまま来られないと、多くの方の真心でつくったお弁当がむだになってしまいます。来られなくなったときは、できるだけ早く、ひとことご連絡ください。早めにいただければ、ほかの方へお渡しするなど対応できます。</p>
+  </div>
+
+  <div class="topic">
+    <h2><span class="n">7</span>MAGOKOROの基本的な考え方</h2>
+    <p class="creed">
+      <b>「できることを、できる範囲で。」</b>
+      <b>「一人でも多くの子どもたちに、<br>安心して食事を届ける。」</b>
+      <span class="hh">&#9825;</span>
+    </p>
+    <p>この案内は、利用される方をしばるためのものではありません。わからないことやご相談は、遠慮なくスタッフにお声かけください。一緒に活動を支えていただけたら嬉しいです。</p>
+  </div>
+
+  <nav class="nav">
+    <a href="../moushikomi/">お申し込み方法</a>
+    <a href="../about/">MAGOKOROについて</a>
+  </nav>
+
+  <footer>
+    こども食堂MAGOKORO　<span class="fh">&#9825;</span>　浜松市<br>
+    お申し込み・お問い合わせは公式LINEのトークへ
+  </footer>
+</div>
+</body>
+</html>

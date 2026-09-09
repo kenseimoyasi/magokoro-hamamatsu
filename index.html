@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>こども食堂MAGOKORO 案内</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=BIZ+UDPGothic:wght@400;700&display=swap">
+<style>
+  :root{
+    --bg:#FFF9F0;--surface:#FFFFFF;--ink:#48372A;--ink-soft:#8A7969;--line:#EEE1D0;
+    --accent:#D9761F;--accent-ink:#B25E12;--accent-soft:#FBE8D5;--leaf:#6E9A55;--heart:#DA6161;
+    --shadow:0 1px 2px rgba(72,55,42,.06),0 8px 24px rgba(72,55,42,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#241B14;--surface:#2F261E;--ink:#F2E7D7;--ink-soft:#B6A692;--line:#3E3329;
+      --accent:#EF9E56;--accent-ink:#F0A863;--accent-soft:#3A2B1F;--leaf:#A7C98D;--heart:#E88C8C;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.28);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#241B14;--surface:#2F261E;--ink:#F2E7D7;--ink-soft:#B6A692;--line:#3E3329;
+    --accent:#EF9E56;--accent-ink:#F0A863;--accent-soft:#3A2B1F;--leaf:#A7C98D;--heart:#E88C8C;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.28);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"BIZ UDPGothic","Hiragino Sans","Yu Gothic UI",system-ui,sans-serif;
+    font-size:17.5px;line-height:1.9;letter-spacing:.01em;
+  }
+  .wrap{max-width:39rem;margin:0 auto;padding:0 20px 64px}
+  header{padding:44px 0 6px;text-align:center}
+  .mark{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:"Zen Maru Gothic",sans-serif;font-weight:700;
+    font-size:1.15rem;color:var(--ink);letter-spacing:.03em;
+  }
+  .mark .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);flex:none}
+  .lead{color:var(--ink-soft);text-align:center;margin:8px 0 26px}
+  .menu{display:flex;flex-direction:column;gap:12px}
+  .menu a{
+    display:flex;align-items:center;gap:14px;background:var(--surface);
+    border:1px solid var(--line);border-radius:16px;padding:18px 18px;
+    text-decoration:none;color:var(--ink);box-shadow:var(--shadow);
+  }
+  .menu a .ic{
+    width:46px;height:46px;border-radius:50%;flex:none;background:var(--accent-soft);
+    display:flex;align-items:center;justify-content:center;font-size:1.35rem;
+  }
+  .menu a .tx{display:flex;flex-direction:column}
+  .menu a .tx b{font-family:"Zen Maru Gothic",sans-serif;font-size:1.08rem}
+  .menu a .tx span{color:var(--ink-soft);font-size:.85rem}
+  footer{
+    margin-top:34px;padding-top:20px;border-top:1px solid var(--line);
+    text-align:center;color:var(--ink-soft);font-size:.85rem;line-height:1.8;
+  }
+  footer .fh{color:var(--heart)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="mark"><span class="dot"></span>こども食堂MAGOKORO</span>
+  </header>
+  <p class="lead">浜松市で活動しているこども食堂です。</p>
+
+  <div class="menu">
+    <a href="goriyou/">
+      <span class="ic">🍱</span>
+      <span class="tx"><b>ご利用案内</b><span>お申し込みの前に、一度ご確認ください</span></span>
+    </a>
+    <a href="moushikomi/">
+      <span class="ic">📅</span>
+      <span class="tx"><b>お申し込み方法</b><span>会場・お申し込みの流れ</span></span>
+    </a>
+    <a href="about/">
+      <span class="ic">💌</span>
+      <span class="tx"><b>MAGOKOROについて</b><span>ふだんの活動・SNS・支援情報</span></span>
+    </a>
+  </div>
+
+  <footer>
+    こども食堂MAGOKORO　<span class="fh">&#9825;</span>　浜松市<br>
+    お申し込み・お問い合わせは公式LINEのトークへ
+  </footer>
+</div>
+</body>
+</html>
